@@ -4,10 +4,6 @@ const app = express();
 
 const port = 4009;
 
-app.get('/*', function(req, res) {
-    res.sendFile(path.join(__dirname, 'index.html'));
-});
-
 app.get('/api/v1/me', (req, res) => {
     res.json({
         status: 200,
@@ -21,6 +17,10 @@ app.get('/api/v1/me', (req, res) => {
             }
         },
     });
+});
+
+app.get('/*', function(req, res) {
+    res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 app.listen(port, console.log(`The servie is linstin to http://localhost:${port}`));
