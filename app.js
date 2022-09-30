@@ -23,4 +23,4 @@ app.get('/*', function(req, res) {
     res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-app.listen(port, console.log(`The servie is linstin to http://localhost:${port}`));
+app.listen(port, console.log(`App servie is linstin to http://localhost:${port}`));
