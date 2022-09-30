@@ -1,24 +1,28 @@
 {
-  "name": "git-action-aws-ec2-practices",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/HelloArthur0425/git-action-aws-ec2-practices.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/HelloArthur0425/git-action-aws-ec2-practices/issues"
-  },
-  "homepage": "https://github.com/HelloArthur0425/git-action-aws-ec2-practices#readme",
-  "dependencies": {
-    "express": "^4.18.1",
-    "nodemon": "^2.0.20"
-  }
+    "name": "git-action-aws-ec2-practices",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "pm2 start app.js --name backend",
+        "dev": "nodemon app.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/HelloArthur0425/git-action-aws-ec2-practices.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/HelloArthur0425/git-action-aws-ec2-practices/issues"
+    },
+    "homepage": "https://github.com/HelloArthur0425/git-action-aws-ec2-practices#readme",
+    "dependencies": {
+        "express": "^4.18.1",
+        "nodemon": "^2.0.20",
+        "path": "^0.12.7",
+        "pm2": "^5.2.0"
+    }
 }
